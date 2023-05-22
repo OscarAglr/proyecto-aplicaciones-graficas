@@ -13,6 +13,44 @@ Tags
     border: none;
 }
 
+.info-image-div, .info-container article{
+    height: 85%;
+    width: 40%;
+    margin: auto;
+}
+
+.info-container article{
+    width: 60%;
+}
+
+.info-container article{
+    text-align: left;
+}
+
+.info-container article h2{
+    margin-bottom: 20px;
+}
+
+
+.info-image-div img{
+    margin-top: 10px;
+    height: 50%;
+    width: 80%;
+    
+}
+
+.info-container {
+    margin: auto;
+    padding: 0 0 20px;
+    height: 40%;
+    width: 90%;
+    display: flex;
+}
+
+.info-container:first-child {
+    padding-top: 20px;
+}
+
 main {
     font-size: 24px;
 }
@@ -30,13 +68,57 @@ html, body{
 
 .container {
     height: fit-content;
-    padding-bottom: 10px;
     margin: 20px auto;
     text-align: center;
-    height: auto;
 }
 
-.container h2 {
+form input {
+    width: 100%;
+    height: 44px;
+    border: 2px solid #070707;
+    margin: auto;
+    background-color: #FFF;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+form div {
+    margin: 25px auto;
+}
+
+form div:first-child {
+    margin-top: 5px
+}
+
+form textarea {
+    width: 100%;
+    border: 2px solid #070707;
+    margin: auto;
+    background-color: #FFF;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 10px;
+    height: 30%;
+}
+
+main {
+    background-color: #FAFAFA;
+}
+
+form {
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    width: 85vw;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.container h2, main h2 {
     font-family: 'Great Vibes';
     font-size: 64px;
 }
@@ -45,6 +127,10 @@ html, body{
     margin: auto;
     display: flex;
     justify-content: center;
+}
+
+#featured-container {
+    padding-bottom: 1.5rem;
 }
 
 #ubication-container img {
@@ -56,11 +142,11 @@ html, body{
 
 #category-container article {
     width: 23%;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
 #category-container h3 {
-    margin-top: 5px;
+    margin: auto;
     font-size: 36px;
     color: #070707;
     font-family: 'Great Vibes';
@@ -71,7 +157,26 @@ html, body{
     height: 75%;
 }
 
-.product-button {
+footer {
+    background-color: #0A012E;
+    color: #FFF;
+    display: flex;
+    padding: 20px 0;
+}
+
+#footer-col {
+    margin: 20px auto;
+}
+
+#footer-col ul li{
+    font-style: 400;
+    color: #928F98;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+button {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     border: #373737 solid 2px;
@@ -79,6 +184,10 @@ html, body{
     color: #373737;
     background-color: #00CCBF;
     padding: 0.6em 1.8em;
+}
+
+.contact-button {
+    float: right;
 }
 
 .product-card {
@@ -135,6 +244,14 @@ h1 {
     margin-left: 0.3em;
 }
 
+form {
+    height: fit-content;
+}
+
+.form-section {
+    padding-bottom: 1.5rem;
+}
+
 header {
     width: 100%;
     height: 15%;
@@ -188,15 +305,27 @@ header nav {
     padding: 0;
 }
 
-li a {
+#social-media {
+    margin-top: 15px;
+    font-size: 32px;
+}
+
+#social-media i{
+    margin: 0 5px;
+}
+
+a {
     text-decoration: none;
     color: currentColor;
+}
+
+ul {
+    list-style-type: none;
 }
 
 nav ul {
     color: 070707;
     display: flex;
-    list-style-type: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -210,8 +339,4 @@ nav ul li:hover {
     background-color: #F0A0C0;
     color: #fff;
     cursor: pointer;
-}
-
-nav ul li:before{
-    content: none;
 }
