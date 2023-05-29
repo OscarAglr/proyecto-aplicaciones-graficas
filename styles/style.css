@@ -80,6 +80,7 @@ form input {
 
 form div {
     margin: 25px auto;
+    width: 100%;
 }
 
 form div:first-child {
@@ -105,7 +106,7 @@ form {
     text-align: left;
     margin: 0 auto;
     padding-bottom: 2em;
-    width: 85vw;
+    width: 85%;
 }
 
 label {
@@ -513,4 +514,8 @@ td, th {
     display: flex;
     justify-content: space-between;
     padding: 10vh 0; 
+}
+
+#fill-data-user {
+    width: 50vw;
 }
