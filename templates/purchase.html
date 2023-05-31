@@ -36,74 +36,83 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="purchase-main">
         <h2>Finalizar compra</h2>
-        <section id="fill-data-user">
-            <h3>Detalles de facturación</h3>
-            <form action="purchase.html">
-                <div>
-                    <label for="">Nombre completo *</label>
-                    <input autocomplete="on" placeholder="Escriba su nombre..." autofocus type="text">
+        <div id="purchase-divider">
+            <section id="fill-data-user">
+                <h3><u>Detalles de facturación</u></h3>
+                <form action="purchase.html">
+                    <div>
+                        <label for="">Nombre completo *</label>
+                        <input autocomplete="on" placeholder="Escriba su nombre..." autofocus type="text">
+                    </div>
+                    <div>
+                        <label for="">No de cedula/pasaporte *</label>
+                        <input autocomplete="on" placeholder="Ponga su cedula o pasaporte" type="text">
+                    </div>
+                    <div>
+                        <label for="">Departamento</label>
+                        <select name="select">
+                            <option value="carazo">Carazo</option>
+                            <option value="managua">Managua</option>
+                            <option value="nueva-segovia" selected>Nueva Segovia</option>
+                            <option value="masaya">Masaya</option>
+                            
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Municipio</label>
+                        <select name="select">
+                            <option value="carazo">Carazo</option>
+                            <option value="managua">Managua</option>
+                            <option value="nueva-segovia" selected>Nueva Segovia</option>
+                            <option value="masaya">Masaya</option>
+                            
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Notas del pedido *</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+                <h3>Información del pago</h3>
+                <form>
+                    <div>
+                        <label for="">Número de tarjeta *</label>
+                        <input autocomplete="on" placeholder="Escriba su nombre..." autofocus type="text">
+                    </div>
+                    <div>
+                        <label for="">Fecha de expiración *</label>
+                        <input autocomplete="on" placeholder="Ponga su cedula o pasaporte" type="text">
+                    </div>
+                    <div>
+                        <label for="">CVV *</label>
+                        <input autocomplete="on" placeholder="Ponga su cedula o pasaporte" type="text">
+                    </div>
+                </form>
+            </section>
+            <section id="purchase-receipt-section">
+                <h3>Su pedido</h3>
+                <div id="purchase-receipt">
+                    
+                    <p><b><u>Productos</u></b></p>
+                    <hr>
+                    <p><b>Traje x 2 </b><span>$ 500.00</span></p>
+                    <p><b>Subtotal</b> <span>$ 500.00</span></p>
+                    <p><b>Impuestos</b> <span>$ 75.00</span></p>
+                    <p><b>Envío</b> $ <span>25.00</span></p>
+                    <p><b>Total</b> $ <span>600.00</span></p>
                 </div>
-                <div>
-                    <label for="">No de cedula/pasaporte *</label>
-                    <input autocomplete="on" placeholder="Ponga su cedula o pasaporte" type="text">
-                </div>
-                <div>
-                    <label for="">Departamento</label>
-                    <select name="select">
-                        <option value="carazo">Carazo</option>
-                        <option value="managua">Managua</option>
-                        <option value="nueva-segovia" selected>Nueva Segovia</option>
-                        <option value="masaya">Masaya</option>
-                        
-                    </select>
-                </div>
-                <div>
-                    <label for="">Municipio</label>
-                    <select name="select">
-                        <option value="carazo">Carazo</option>
-                        <option value="managua">Managua</option>
-                        <option value="nueva-segovia" selected>Nueva Segovia</option>
-                        <option value="masaya">Masaya</option>
-                        
-                    </select>
-                </div>
-                <div>
-                    <label for="">Notas del pedido *</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-            </form>
-            <h3>Información del pago</h3>
-            <form>
-                <div>
-                    <label for="">Número de tarjeta *</label>
-                    <input autocomplete="on" placeholder="Escriba su nombre..." autofocus type="text">
-                </div>
-                <div>
-                    <label for="">Fecha de expiración *</label>
-                    <input autocomplete="on" placeholder="Ponga su cedula o pasaporte" type="text">
-                </div>
-                <div>
-                    <label for="">CVV *</label>
-                    <input autocomplete="on" placeholder="Ponga su cedula o pasaporte" type="text">
-                </div>
-            </form>
-        </section>
-        <section id="fill-data-user">
-            <h3>Su pedido</h3>
-            <div>
-                <p>Productos</p>
-                <hr>
-                <p>Traje $ 500.00</p>
-                <p>Subtotal $ 500.00</p>
-                <p>Impuestos $ 75.00</p>
-                <p>Envío</p>
-                <p>Total</p>
-            </div>
-            <button>Finalizar</button>
-            <button>Cancelar</button>
-        </section>
+
+                <section id="purchase-button-section">
+                    <button>Finalizar</button>
+                    <button>Cancelar</button>
+                </section>
+                
+            </section>
+            
+        </div>
+        
     </main>
     <footer>
         <div id="footer-col">

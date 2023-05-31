@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
 /*
 Tags
@@ -122,6 +123,7 @@ label {
 #category-container, #featured-container, #ubication-container {
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -130,9 +132,9 @@ label {
 }
 
 #ubication-container img {
-    margin: 10px 25px;
-    height: 16em;
-    width: 20em;
+    margin: 5vh 25px 4vh;
+    height: 30vw;
+    width: 35vw;
     object-fit: cover;
 }
 
@@ -173,12 +175,28 @@ footer {
     margin-left: 10px;
 }
 
+.stars {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.stars span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stars .bi-star-fill {
+    color: #FAC300;
+    margin: auto;
+}
+
 button {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     border: #373737 solid 2px;
     border-radius: 30px;
-    color: #373737;
+    color: #050505;
     background-color: #00CCBF;
     padding: 0.6em 1.8em;
 }
@@ -189,15 +207,19 @@ button {
 
 .product-card {
     margin: auto;
-    border-radius: 45px;
-    width: 23%;
+    border-radius: 2rem;
+    width: 23vw;
 }
+
+
 
 .product-card img {
     width: 100%;
     height: 30%;
     border-radius: 45px 45px 0 0;
+    
     object-fit: cover;
+    overflow: hidden;
 }
 
 
@@ -510,12 +532,174 @@ td, th {
 }
 
 #shopping-cart-button-container {
-    margin: auto 8vh;
+    width: 100%;
+    border-top: #070707 solid 1px;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10vh 0; 
 }
 
+#shopping-cart-receipt {
+    
+    background-color: #FAFAFA;
+    border-top: #070707 solid 2px;
+    border-bottom: #070707 solid 2px;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    width: fit-content;
+    padding: 2rem 1rem;
+}
+
+#shopping-cart-receipt p {
+    
+    margin: 3vh auto;
+}
+
+#purchase-main {
+    text-align: center;
+    display: block;
+}
+
 #fill-data-user {
-    width: 50vw;
+    width: 60vw;
+    text-align: left;
+}
+
+#fill-data-user h3 {
+    margin-left: 4vw;
+}
+
+
+#purchase-divider {
+    display: flex;
+}
+
+#purchase-receipt-section {
+    display: flexbox;
+    flex: wrap;
+    
+    height: fit-content;
+    
+    text-align: left;
+    
+}
+
+#shopping-cart-receipt-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#purchase-receipt {
+    margin: 5vh auto;
+    padding: 1rem 2rem;
+    background-color: #FAFAFA;
+    border: #070707 solid 2px;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 24px;
+    width: 35vw;
+}
+
+#purchase-receipt p {
+    justify-content: space-between;
+    text-align: left;
+    margin: 2vh auto;
+}
+
+#purchase-receipt p span {
+    float: right;
+}
+
+#purchase-button-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+#purchase-main h2{
+    padding-top: 1rem;
+}
+
+@media only screen and (max-width: 640px){
+    .search-bar,  .search-bar input[type="search"], .search-bar .uil-search {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        transition: none;
+        -o-transition: none; 
+        -webkit-transition: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #lower-header{
+        width: 0;
+        height: 0;
+        
+    }
+
+    #video-container {
+        height: 40vh;
+    }
+
+    button {
+        font-size: 14px;
+        border-radius: 20px;
+        padding: 0.3em 1.2em;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    .container h2, main h2 {
+        font-size: 36px;
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+
+    #featured-container {
+        padding-bottom: 0;
+    }
+
+    #ubication-container img {
+        height: 60vw;
+        width: 70vw;
+    }
+
+    #ubication-container p {
+        font-size: 14px;
+    }
+    
+    .product-card h3{
+        font-size: 12px;
+        margin: auto 0.1em;
+    }
+
+    .product-card {
+        margin: 0.5rem 0.5em;
+        height: fit-content;
+        width: 42vw;
+    }
+
+    #category-container article {
+        height: 40vh;
+        width: 40vw;
+    }
+
+    #category-container article h3 {
+        font-size: 20px;
+    }
+
+    .product-card img {
+        border-radius: 25px 25px 0 0;
+        object-fit: cover;
+    }
+    .product-card p {
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
