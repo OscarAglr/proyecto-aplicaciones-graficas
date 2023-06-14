@@ -1,0 +1,79 @@
+#purchase-main {
+    font-size: 16px;
+}
+
+#purchase-divider {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#purchase-main h2{
+    padding: 0;
+    padding: 2vh 0;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#fill-data-user {
+    text-align: center;
+    width: 25rem;
+}
+
+#fill-data-user form {
+    padding: 0;
+}
+
+#purchase-receipt-section {
+    text-align: center;
+    width: 25rem;
+}
+
+#purchase-receipt-section h3, #fill-data-user h3 {
+    font-size: 1.4rem;
+}
+
+#purchase-receipt {
+    font-family: 'Montserrat';
+    text-align: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 1vh 1rem;
+    margin: 1vh auto;
+    width: 20rem;
+}
+
+#purchase-button-section {
+    width: 20rem;
+}
+
+#purchase-receipt {
+    margin: 2vh auto 0;
+}
+
+#purchase-button-section {
+    padding: 3vh 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+#purchase-button-section button {
+    font-size: 16px;
+    padding: 1vh 0;
+    width: 10rem;
+}
+
+
+#purchase-receipt p {
+    justify-content: space-between;
+}
+
+#purchase-receipt h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}

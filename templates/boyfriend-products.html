@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- Site Icon -->
+	<link rel="shortcut Icon" type="image/png" href="img/favicon.png">
+
+	<!-- Font Awesome Icons -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
@@ -36,104 +49,211 @@
             </ul>
         </nav>
     </header>
-    <main id="product-catalogue-container">
-        <aside>
-            <fieldset id="subcategory-divider">
-                <legend>Sub-categorías</legend>
-                <div>
-                    <input type="checkbox" name="traje" id="traje" value="traje">
-                    <label for="traje">Trajes</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="bf-accesories" id="bf-accesories" value="bf-accesories">
-                    <label for="bf-accesories">Accesorios</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="bf-accesories" id="bf-accesories" value="bf-accesories">
-                    <label for="bf-accesories">Complementos</label>
-                </div>
-            </fieldset>
-            <div id="price-range-divider">
-                <h2>Rango de precio</h2>
-                <input type="range" name="bf-price-range" id="bf-price-range">
-                <div id="price-range">
-                    <p>0</p>
-                    <p>5000</p>
-                </div>
-            </div>
-        </aside>
-       
-        <section id="catalogue-section">
-            <h2>Productos para novio</h2>
-            <div id="catalogue">
-                <article class="product-card">
-                    <img src="/media/image/trajeazul1.jpg" alt="Traje azul con cuello mao">
-                    <h3>Traje azul para novio con cuello mao</h3>
-                    <p>5 estrellas</p>
-                    <p><i>Tallas: M L XL XXL</i></p>
-                    <button class="product-button">
-                        Detalles
-                    </button>
-                </article>
-                <article class="product-card">
-                    <img src="/media/image/trajeazul1.jpg" alt="Traje azul con cuello mao">
-                    <h3>Traje azul para novio con cuello mao</h3>
-                    <p>5 estrellas</p>
-                    <p><i>Tallas: M L XL XXL</i></p>
-                    <button class="product-button">
-                        Detalles
-                    </button>
-                </article>
-                <article class="product-card">
-                    <img src="/media/image/trajeazul1.jpg" alt="Traje azul con cuello mao">
-                    <h3>Traje azul para novio con cuello mao</h3>
-                    <p>5 estrellas</p>
-                    <p><i>Tallas: M L XL XXL</i></p>
-                    <button class="product-button">
-                        Detalles
-                    </button>
-                </article>
-                <article class="product-card">
-                    <img src="/media/image/trajeazul1.jpg" alt="Traje azul con cuello mao">
-                    <h3>Traje azul para novio con cuello mao</h3>
-                    <p>5 estrellas</p>
-                    <p><i>Tallas: M L XL XXL</i></p>
-                    <button class="product-button">
-                        Detalles
-                    </button>
-                </article>
-                <article class="product-card">
-                    <img src="/media/image/trajeazul1.jpg" alt="Traje azul con cuello mao">
-                    <h3>Traje azul para novio con cuello mao</h3>
-                    <p>5 estrellas</p>
-                    <p><i>Tallas: M L XL XXL</i></p>
-                    <button class="product-button">
-                        Detalles
-                    </button>
-                </article>
-                <article class="product-card">
-                    <img src="/media/image/trajeazul1.jpg" alt="Traje azul con cuello mao">
-                    <h3>Traje azul para novio con cuello mao</h3>
-                    <p>5 estrellas</p>
-                    <p><i>Tallas: M L XL XXL</i></p>
-                    <button class="product-button">
-                        Detalles
-                    </button>
-                </article>
-            </div>
-            <div class="center">
-                <div class="pagination">
-                    <a href="#">&laquo;</a>
-                    <a class="active" href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">&raquo;</a>
-                </div>
-            </div>
-        </section>
-    </main>
+    
+    <section class="page-section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-3 blog-form">
+					<h2 class="blog-sidebar-title"><b>Cart</b></h2>
+					<hr />
+					<p class="blog-sidebar-text">No products in the cart...</p>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+
+					<h2 class="blog-sidebar-title"><b>Categories</b></h2>
+					<hr />
+
+					<p class="blog-sidebar-list"><b><span class="list-icon"> > </span> Coffee</b></p>
+					<p class="blog-sidebar-list"><b><span class="list-icon"> > </span> Green Coffee</b></p>
+					<p class="blog-sidebar-list"><b><span class="list-icon"> > </span> Nigerian</b></p>
+					<p class="blog-sidebar-list"><b><span class="list-icon"> > </span> Roasted Coffee</b></p>
+					<p class="blog-sidebar-list"><b><span class="list-icon"> > </span> Uncategorized</b></p>
+
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+
+					<h2 class="blog-sidebar-title"><b>Filter</b></h2>
+					<hr />
+
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Search" aria-label="Receipient's username" aria-describely="basic-addon2">
+						<div class="input-group-append">
+							<span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+						</div>
+						
+					</div>
+
+					<p class="tags">Price $4 - $25</p>
+					<button type="button" class="btn btn-dark btn-lg">Filter</button>
+
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<h2 class="blog-sidebar-title"><b>Tags</b></h2>
+					<p class="product-sidebar-list"><b>#accessory, #arabica</b></p>
+					<p class="product-sidebar-list"><b>#candy, #bean, #cup</b></p>
+					<p class="product-sidebar-list"><b>#ethopian, #latte</b></p>
+
+
+				</div>
+				<!--END  <div class="col-lg-3 blog-form">-->
+
+				<div class="col-lg-9" style="padding-left: 30px;">
+					<div class="row">
+						<div class="col">
+							Showing all 9 results
+						</div>
+
+						<div class="col">
+							<select class="form-control">
+								<option value="">Default Sorting</option>
+								<option value="popularity">Sorting by popularity</option>
+								<option value="average">Sorting by average</option>
+								<option value="latest">Sorting by latest</option>
+								<option value="low">Sorting by low</option>
+								<option value="high">Sorting by high</option>
+							</select>
+						</div>
+
+					</div>
+					<!-- Sorting by <div class="row"> -->
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+
+					<div class="row">
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="/media/image/trajeazul1.jpg" class="product-image">
+									<h5 class="card-title"><b>Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $25.16</p>
+									<a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="/media/image/trajeazul1.jpg" class="product-image">
+									<h5 class="card-title"><b>Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $25.16</p>
+									<a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="/media/image/trajeazul1.jpg" class="product-image">
+									<h5 class="card-title"><b>Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $25.16</p>
+									<a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- Sorting by <div class="row"> -->
+
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+
+					<div class="row">
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="/media/image/trajeazul1.jpg" class="product-image">
+									<h5 class="card-title"><b>Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $25.16</p>
+									<a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="/media/image/trajeazul1.jpg" class="product-image">
+									<h5 class="card-title"><b>Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $25.16</p>
+									<a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="/media/image/trajeazul1.jpg" class="product-image">
+									<h5 class="card-title"><b>Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $25.16</p>
+									<a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- Sorting by <div class="row"> -->
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+
+					<div class="row">
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="/media/image/trajeazul1.jpg" class="product-image">
+									<h5 class="card-title"><b>Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $25.16</p>
+									<a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="/media/image/trajeazul1.jpg" class="product-image">
+									<h5 class="card-title"><b>Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $25.16</p>
+									<a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="/media/image/trajeazul1.jpg" class="product-image">
+									<h5 class="card-title"><b>Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $25.16</p>
+									<a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- Sorting by <div class="row"> -->
+
+
+
+				</div>
+				<!--END  <div class="col-lg-9">-->
+
+			</div>
+		</div>
+	</section>
+
     <footer>
         <div id="footer-col">
             <h3>Nuestra compañía</h3>

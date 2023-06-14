@@ -1,0 +1,106 @@
+
+#shopping-main {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#products-section {
+    padding: 0;
+    text-align: center;
+    
+}
+
+#products-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    padding: 2vh;
+}
+
+.product-article {
+    padding: 1rem 0;
+    border: 1px solid #1e1e1e;
+    border-width: 1px 0 0 0;
+    font-size: 12px;
+    display: flex;
+}
+
+.product-article h3 {
+    font-size: 1.2em;
+}
+
+.product-article p {
+}
+
+
+.left-side-pa {
+    margin: auto 0;
+    text-align: left;
+    width: 25%;
+}
+
+.product-article img {
+    margin: auto 2.5vw;
+    width:  90px;
+    height: 90px;
+}
+
+.right-side-pa-1 {
+    width: 15%;
+    margin: auto 0;
+}
+
+
+
+.right-side-pa-2 {
+    width: 20%;
+    margin: auto 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.bi-trash {
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+#checkbox-section {
+    width: 100%;
+    padding: 0.5rem 1rem 0;
+}
+
+#buttons-section-sp {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem 0.8rem;
+}
+
+#buttons-section-sp button {
+    font-size: 18px;
+    width: 20em;
+    margin: 1vh auto;
+}
+
+#receipt-section-sp {
+    width: 100%;
+    padding: 1rem 1rem;
+    border: 1px solid #1e1e1e;
+    border-width: 1px 0;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+#receipt-section-sp p {
+    margin: 1vh 0;
+}
+
+input[type="number"]{
+    text-align: center;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    border: 1px solid #1e1e1e;
+    width: 32px;
+    height: 32px;
+}
