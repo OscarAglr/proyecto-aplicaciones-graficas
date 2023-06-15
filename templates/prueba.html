@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/product.css">
+    <link rel="stylesheet" href="../styles/prueba.css">
     <title>Inicio</title>
 </head>
 <body>
@@ -37,47 +37,33 @@
             </ul>
         </nav>
     </header>
-    <main id="product-main">
-        <article id="product-information">
-            <section id="image-area">
-                <div class="main-image">
-                    <img src="../media/image/trajeazul1.jpg" alt="Traje azul con cuello mao">
-                </div>
-                <div class="option flex">
-                    <img src="../media/image/trajeazul1.jpg" alt="Traje azul con cuello mao">
-                    <img src="../media/image/trajeazul1.jpg" alt="Traje azul con cuello mao">
-                    <img src="../media/image/trajeazul1.jpg" alt="Traje azul con cuello mao">
-                </div>
-            </section> 
-            <section id="info-area">
-                <h3>Traje azul para novio, con cuello mao</h3>
-                <h4><small>$</small> 250</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sint, vero quisquam vitae perspiciatis enim iusto eligendi nihil dolores illum blanditiis commodi doloremque vel voluptate debitis autem, quos molestiae? Minus!
-                </p>
-                <div id="product-data-divider">
-                    <div class="size-divider">
-                        <label for="">Talla: </label>
-                        <select name="select">
-                            <option value="value1">M</option>
-                            <option value="value2" selected>L</option>
-                            <option value="value3">XL</option>
-                        </select>
-                    </div>
-                    <div class="quantity-div">
-                        <label for="">Cantidad: </label>
-                        <span>
-                            <button class="quantity-button">+</button>
-                            <input type="number" value="1" min="1" max="100">
-                            <button class="quantity-button">-</button>
-                        </span>
-                    </div>
-                    <button>Agregar al carrito</button>
-                </div>
-                
-            </section>
-        </article>
-        
+    <main>
+        <div class="container">
+            <div class="carousel">
+              <!-- Imágenes del carrusel -->
+              <img src="../media/image/trajeazul.jpg" alt="Imagen 1">
+              <img src="../media/image/traje-2.jpeg" alt="Imagen 2">
+              <img src="../media/image/traje-3.jpg" alt="Imagen 3">
+            </div>
+            <div class="product-info">
+              <h1>Nombre del Producto</h1>
+              <p>Detalles del producto aquí.</p>
+              <p>Precio: $99.99</p>
+              <form>
+                <label for="size">Talla:</label>
+                <select id="size">
+                  <option value="s">S</option>
+                  <option value="m">M</option>
+                  <option value="l">L</option>
+                </select>
+                <br>
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" min="1" value="1">
+                <br>
+                <input type="submit" value="Añadir al Carrito">
+              </form>
+            </div>
+          </div>
     </main>
     <footer>
         <div id="footer-col">

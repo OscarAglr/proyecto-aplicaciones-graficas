@@ -1,0 +1,104 @@
+#product-main {
+    font-size: 16px;
+}
+
+#product-information {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#image-area {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 40%;
+    
+}
+
+.main-image {
+    width: auto;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main-image img {
+    padding: 10px 0;
+    width: 80%;
+    height: 100%;
+}
+
+#info-area {
+    width: 50%;
+    padding: 0 2vw;
+    text-align: center;
+}
+
+#info-area h3 {
+    font-size: 2.5rem;
+    margin-top: 2vh;
+    text-align: left;
+}
+
+#info-area h4 {
+    font-size: 2rem;
+    margin: 10px auto;
+    text-align: left;
+}
+
+#info-area p {
+    font-size: 1.5rem;
+}
+
+#info-area p {
+    text-align: left;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+}
+
+.option img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    
+}
+
+#product-data-divider {
+    font-size: 1.5rem;
+    padding: 3vh 0;
+}
+
+#product-data-divider select {
+    margin: auto 10px;
+    width: 200px;
+}
+
+.size-divider, .quantity-div {
+    padding: 1vh 0;
+    justify-content: baseline;
+    display: flex;
+}
+
+.quantity-div span {
+    align-items: center;
+    margin-left: 10px;
+}
+
+input[type="number"], .quantity-button {
+    padding: 5px;
+    background-color: #fafafa;
+    text-align: center;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    border: 1px solid #1e1e1e;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+}
