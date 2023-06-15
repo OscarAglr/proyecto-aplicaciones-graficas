@@ -3,6 +3,7 @@
 }
 
 #product-information {
+    padding: 5vh 0;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -76,18 +77,28 @@
 
 #product-data-divider select {
     margin: auto 10px;
-    width: 200px;
 }
 
 .size-divider, .quantity-div {
     padding: 1vh 0;
     justify-content: baseline;
     display: flex;
+    height: fit-content;
+    align-items: center;
 }
 
 .quantity-div span {
+    
     align-items: center;
     margin-left: 10px;
+}
+
+.quantity-div .cart-button {
+    margin-left: 10px;
+    height: 36px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 input[type="number"], .quantity-button {
@@ -101,4 +112,67 @@ input[type="number"], .quantity-button {
     width: 2rem;
     height: 2rem;
     font-size: 1rem;
+}
+
+#product-data-divider select {
+    -webkit-appearance: none;
+    -moz-appearance : none;
+    border:1px solid #ccc;
+    border-radius:3px;
+    padding: 5px 3px;
+    background-color: #fafafa;
+    border: 1px solid #1e1e1e;
+    width: 4rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.barra, .barra-color {
+    height: 2rem;
+}
+
+.barras {
+    height: 300px;
+    width: 85vw;
+    margin: auto;
+}
+
+.bar-div {
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.bar-div span{
+    
+    width: 100px;
+}
+
+.barra {
+    display: block;
+    width: 80%;
+    background-color: #EFE8E8;
+}
+
+.barra-color {
+    margin: 0;
+    background-color: #FAC300;
+    border-radius: 10px;
+}
+
+.add-comment {
+
+}
+
+.comment {
+    width: 100%;
+    border: 2px solid #070707;
+    margin: auto;
+    background-color: #FFF;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 192px;
 }
