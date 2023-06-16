@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="/media/image/image-ico.ico">
     <title>Inicio</title>
 </head>
 <body>
@@ -59,25 +60,25 @@
                 </article>
                 <article class="product-card">
                     <img src="/media/image/zapato.jpg" alt="Traje azul con cuello mao">
-                    <h3>Traje azul para novio con cuello mao</h3>
+                    <h3>Zapato oscuro de cuero para novio</h3>
                     <p class="stars"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><span>(99) 5/5</span></p>
-                    <p><i>Tallas: M L XL XXL</i></p>
+                    <p><i>Tallas: 32 33 34</i></p>
                     <button class="product-button">
                         Detalles
                     </button>
                 </article>
                 <article class="product-card">
                     <img src="/media/image/vestido_novia.jpg" alt="Traje azul con cuello mao">
-                    <h3>Traje azul para novio con cuello mao</h3>
+                    <h3>Vestido blanco para novia marca ACME</h3>
                     <p class="stars"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><span>(99) 5/5</span></p>
-                    <p><i>Tallas: M L XL XXL</i></p>
+                    <p><i>Tallas: S M L</i></p>
                     <button class="product-button">
                         Detalles
                     </button>
                 </article>
                 <article class="product-card">
                     <img src="/media/image/trajerojo4.jpg" alt="Traje azul con cuello mao">
-                    <h3>Traje azul para novio con cuello mao</h3>
+                    <h3>Traje rojo para novio con cuello mao</h3>
                     <p class="stars"><span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><span>(99) 5/5</span></p>
                     <p><i>Tallas: M L XL XXL</i></p>
                     <button class="product-button">
@@ -113,7 +114,7 @@
             <p>Visítanos en: <b>Km 4, 1/2 Carretera Norte, Managua 11032</b></p>
             <div id="ubication-container">
                 <img src="/media/image/local.jpg" alt="Foto del lugar">
-                <img src="/media/image/lugar-mapa.jpg" alt="Ubicación en masaya">
+                <iframe src="https://maps.google.com/maps?q=12.1368351,-86.2339605&z=18&output=embed" frameborder="0" style="border:0"></iframe>
             </div>
         </section>
     </main>
@@ -153,5 +154,17 @@
             </div>
         </div>
     </footer>
+    <script>
+        // JavaScript para el desplegable en pantallas pequeñas
+document.addEventListener("DOMContentLoaded", function () {
+  var toggleButton = document.querySelector("#catalogue-section h2");
+  var catalogueDiv = document.querySelector("#catalogue");
+
+  toggleButton.addEventListener("click", function () {
+    toggleButton.parentElement.classList.toggle("active");
+  });
+});
+
+    </script>
 </body>
 </html>

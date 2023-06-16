@@ -161,7 +161,7 @@ label {
     padding-bottom: 1.5rem;
 }
 
-#ubication-container img {
+#ubication-container img, #ubication-container iframe {
     margin: 5vh 25px 4vh;
     height: 30vw;
     width: 35vw;
@@ -169,7 +169,8 @@ label {
 }
 
 #category-container article {
-    width: 23%;
+    width: 250px;
+    height: 300px;
     margin: 0 auto;
 }
 
@@ -222,13 +223,13 @@ footer {
 }
 
 button {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     border: #373737 solid 2px;
     border-radius: 30px;
     color: #050505;
     background-color: #00CCBF;
-    padding: 0.6em 1.8em;
+    padding: 8px 30px;
 }
 
 .contact-button {
@@ -238,14 +239,15 @@ button {
 .product-card {
     margin: auto;
     border-radius: 2rem;
-    width: 23vw;
+    width: 275px;
+    height: fit-content;
 }
 
 
 
 .product-card img {
     width: 100%;
-    height: 30%;
+    height: 250px;
     border-radius: 45px 45px 0 0;
     
     object-fit: cover;
@@ -255,9 +257,8 @@ button {
 
 
 .product-card h3{
-    font-size: 24px;
-    margin: 5px 15px;
-    margin: auto;
+    font-size: 20px;
+    margin: 5px 20px;
 }
 
 .product-card p {
@@ -335,11 +336,26 @@ aside {
 
 #product-catalogue-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #catalogue-section {
     text-align: center;
     width: 70%;
+}
+
+#catalogue .product-card {
+    width: 250px;
+}
+
+#catalogue .product-card img {
+    height: 225px;
+    
+}
+
+#catalogue .product-card h3 {
+    margin: 5px 10px;
+    
 }
 
 #catalogue-section h2{
@@ -354,10 +370,7 @@ aside {
 }
 
 #catalogue .product-card {
-    text-align: center;
-    width: 27%;
-    height: 30%;
-    margin: 2vh 3vh 3vh;
+    margin: 2vh 1vw 3vh;
 } 
 
 #catalogue .product-card h3 {
@@ -673,29 +686,20 @@ td, th {
         height: 40vh;
     }
 
-    button {
-        font-size: 14px;
-        border-radius: 20px;
-        padding: 0.3em 1.2em;
-    }
 
     h1{
         font-size: 32px;
     }
 
     .container h2, main h2 {
-        font-size: 36px;
-    }
-
-    .container p {
-        font-size: 14px;
+        font-size: 44px;
     }
 
     #featured-container {
         padding-bottom: 0;
     }
 
-    #ubication-container img {
+    #ubication-container img, #ubication-container iframe {
         height: 60vw;
         width: 70vw;
     }
@@ -704,33 +708,17 @@ td, th {
         font-size: 14px;
     }
     
-    .product-card h3{
-        font-size: 12px;
-        margin: auto 0.1em;
-    }
-
-    .product-card {
-        margin: 0.5rem 0.5em;
-        height: fit-content;
-        width: 42vw;
-    }
-
     #category-container article {
         height: 40vh;
         width: 40vw;
     }
 
     #category-container article h3 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .product-card img {
         border-radius: 25px 25px 0 0;
         object-fit: cover;
-    }
-    .product-card p {
-        font-size: 12px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }

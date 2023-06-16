@@ -1,0 +1,8 @@
+@media screen and (max-width: 728px) {
+    #product-catalogue-container aside {
+        width: 100%;
+    }
+    #product-catalogue-container #catalogue-section {
+        width: 100%;
+    }
+}

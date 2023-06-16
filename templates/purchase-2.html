@@ -43,6 +43,23 @@
         <div id="purchase-divider">
             <section id="fill-data-user">
                 <h3><u>Detalles de facturación</u></h3>
+                <h4>Datos del remitente</h4>
+                <form action="purchase.html">
+                    <div>
+                        <label for="">Nombre completo *</label>
+                        <input autocomplete="on" placeholder="Escriba su nombre..." autofocus type="text">
+                    </div>
+                    <div>
+                        <label for="">No de cedula/pasaporte *</label>
+                        <input autocomplete="on" placeholder="Ponga su cedula o pasaporte" type="text">
+                    </div>
+                    <div>
+                        <label for="">Notas del pedido *</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+                
+                <h4>Datos del destinatario</h4>
                 <form action="purchase.html">
                     <div>
                         <label for="">Nombre completo *</label>
@@ -73,10 +90,13 @@
                         </select>
                     </div>
                     <div>
-                        <label for="">Notas del pedido *</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <label for="">Dirección *</label>
+                        <input autocomplete="on" placeholder="Escriba su nombre..." autofocus type="text">
                     </div>
                 </form>
+                
+            </section>
+            <section id="purchase-receipt-section">
                 <h3>Información del pago</h3>
                 <form>
                     <div>
@@ -92,8 +112,6 @@
                         <input autocomplete="on" placeholder="Ponga su cedula o pasaporte" type="text">
                     </div>
                 </form>
-            </section>
-            <section id="purchase-receipt-section">
                 <h3>Su pedido</h3>
                 <div id="purchase-receipt">
                     <h3><b><u>Productos</u></b></h3>
