@@ -5,6 +5,21 @@
     font-size: 16px;
 }
 
+.barras p {
+    margin: 2vh 2.5vw;
+}
+
+.add-comment p {
+    font-size: 20px;
+    margin: 3vh 4.5vw;
+}
+
+.a-possible:link, .a-possible:visited {
+    color: #00B4D8;
+        text-decoration: underline;
+        cursor: pointer;
+}
+
 #product-information {
     padding: 5vh 0;
     width: 100%;
@@ -153,6 +168,12 @@ input[type="number"], .quantity-button {
 .add-comment form {
     width: 90%;
 }
+
+.add-comment form button {
+    margin-top: 3vh;
+    float: right;
+}
+
 
 .barras p {
     font-size: 0.6em;

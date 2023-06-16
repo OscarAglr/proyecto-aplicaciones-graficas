@@ -23,25 +23,35 @@ Tags
     height: 85%;
     width: 40%;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .info-container article{
-    width: 60%;
+    width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+    .info-container article{
+        width: 300px;
+        font-size: 20px;
+    }
 }
 
 .info-container article{
-    text-align: left;
+    text-align: justify;
 }
 
 .info-container article h2{
-    margin-bottom: 20px;
+    margin: 1vh auto;
 }
 
 
 .info-image-div img{
     margin-top: 10px;
-    height: 50%;
-    width: 80%;
+    margin-left: 1vw;
+    height: 90%;
+    width: 400px;
     
 }
 
@@ -49,8 +59,10 @@ Tags
     margin: auto;
     padding: 0 0 20px;
     height: 40%;
-    width: 90%;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .info-container:first-child {
@@ -810,4 +822,5 @@ td, th {
         padding: 1vh 5vw;
     }
 
+    
 }

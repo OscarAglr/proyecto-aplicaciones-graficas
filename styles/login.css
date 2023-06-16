@@ -85,3 +85,9 @@ form label, p {
 form {
     padding: 3vh 0;
 }
+
+.a-possible:link, .a-possible:visited {
+    color: #00B4D8;
+        text-decoration: underline;
+        cursor: pointer;
+}
