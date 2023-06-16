@@ -68,9 +68,10 @@
 
 #purchase-button-section button {
     font-size: 16px;
-    padding: 1vh 0;
-    width: 10rem;
+    padding: 0.5rem 0.2rem;
+    width: 9rem;
 }
+
 
 
 #purchase-receipt p {
@@ -80,4 +81,14 @@
 #purchase-receipt h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 24px;
+    }
+
+    #purchase-button-section button {
+        font-size: 20px;
+    }
 }
